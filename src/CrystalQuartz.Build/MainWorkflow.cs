@@ -236,7 +236,9 @@ namespace CrystalQuartz.Build
                 return "msbuild";
             }
 
-            return base.GetToolPath(context);
+            string v = base.GetToolPath(context);
+            Console.WriteLine(v);
+            return "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\MSBuild\\Current\\Bin\\MSBuild.exe";
         }
     }
 }

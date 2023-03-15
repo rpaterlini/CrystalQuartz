@@ -1,3 +1,15 @@
+# PT change
++ Removed visualization of .NET and library version
++ Build:
+  + Need .NET 4.5.2, node 14.18.2
+  + Change `src\CrystalQuartz.Build\MainWorkflow.cs`, line 240, to return the current location of msbuild.exe
+  + Run Build.bat
+  + Take this assemblies:
+    + Artifacts\bin_452\Release_Merged\CrystalQuartz.Web.dll
+    + Artifacts\bin_452\Release\CrystalQuartz.Core.dll
+    
+
+
 ![](http://guryanovev.github.io/CrystalQuartz/demo_v6.png)
 
 Crystal Quartz Panel is a lightweight, completely pluggable module for displaying Quartz.NET scheduler jobs information.
